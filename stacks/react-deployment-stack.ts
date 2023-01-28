@@ -1,10 +1,10 @@
-import * as cdk from 'aws-cdk-lib';
+import { CfnOutput, Stack, StackProps } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { Bucket } from 'aws-cdk-lib/aws-s3';
 import { CloudFrontWebDistribution } from 'aws-cdk-lib/aws-cloudfront';
 
-export class ReactDeploymentStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
+export class ReactDeploymentStack extends Stack {
+  constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
     const reactDeploymentBucket = new Bucket(this, 'ReactDeploymentBucket', {
@@ -28,6 +28,16 @@ export class ReactDeploymentStack extends cdk.Stack {
         ],
       }
     );
+
+    new CfnOutput(this, 'WebsiteURL', {
+      value: reactDeploymentBucket.bucketWebsiteUrl,
+      description: 'URL of the website',
+    });
+
+    new CfnOutput(this, 'CloudFrontDistributionDomainName', {
+      value: distribution.distributionDomainName,
+      description: 'CloudFront Distribution Domain Name',
+    });
   }
 }
 
