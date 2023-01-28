@@ -53,6 +53,7 @@ export class ReactDeploymentStack extends Stack {
       value: reactDeploymentBucket.bucketWebsiteUrl,
       description: 'URL of the website',
     });
+
     return s3Url;
   }
 
