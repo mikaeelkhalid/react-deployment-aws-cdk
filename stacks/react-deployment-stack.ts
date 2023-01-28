@@ -8,6 +8,7 @@ export class ReactDeploymentStack extends cdk.Stack {
     super(scope, id, props);
 
     const reactDeploymentBucket = new Bucket(this, 'ReactDeploymentBucket', {
+      bucketName: 'react-deployment-bucket', //should be unique
       websiteIndexDocument: 'index.html',
       websiteErrorDocument: 'index.html',
       publicReadAccess: true,
