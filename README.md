@@ -9,6 +9,7 @@ To use this stack, you will need to have the AWS CDK CLI installed and configure
 1. Clone the repository: https://github.com/mikaeelkhalid/react-deployment-aws-cdk.git
 2. Run `npm install` in the repository's root directory to install the necessary dependencies
 3. Run `cdk deploy` to deploy the stack to your AWS account
+4. Run `cdk destroy` to destroy & cleanup resources.
 
 
 ### Stack Components
