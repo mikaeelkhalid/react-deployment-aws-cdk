@@ -6,7 +6,7 @@ This repository contains an AWS CDK stack for deploying a React application. It 
 
 To use this stack, you will need to have the AWS CDK CLI installed and configured on your machine.
 
-1. Clone the repository
+1. Clone the repository: https://github.com/mikaeelkhalid/react-deployment-aws-cdk.git
 2. Run `npm install` in the repository's root directory to install the necessary dependencies
 3. Run `cdk deploy` to deploy the stack to your AWS account
 
