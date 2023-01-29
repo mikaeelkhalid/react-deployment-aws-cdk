@@ -21,4 +21,4 @@ Outputs
 1. `WebsiteURL`: The URL of the website hosted in the S3 bucket.
 2. `CloudFrontDistributionDomainName`: The domain name of the CloudFront distribution.
 
-This repo is part of the following blog post: https://hashnode.com/preview/63d5547eb58a2c00082ea248
+This repo is part of the following blog post: https://blog.mikaeels.com/deploy-react-app-with-aws-cdk
