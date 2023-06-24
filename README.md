@@ -1,4 +1,4 @@
-## Welcome to CDK React App Deployment [Tyoescript]
+## Welcome to CDK React App Deployment [Typescript]
 
 [![Mikaeel Khalid](https://badgen.now.sh/badge/by/mikaeelkhalid/purple)](#)
 
