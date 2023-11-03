@@ -4,6 +4,8 @@
 
 This repository contains an AWS CDK stack for deploying a React application. It creates an S3 bucket for storing the application files and a CloudFront distribution for serving the files to the public.
 
+This project has CI/CD and an improved version here: [react-deployment-cicd-aws-cdk](https://github.com/mikaeelkhalid/react-deployment-cicd-aws-cdk).
+
 ### Usage
 
 To use this stack, you must have the AWS CDK CLI installed and configured on your machine.
